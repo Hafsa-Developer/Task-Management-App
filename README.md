@@ -18,8 +18,7 @@ A clean, interactive, and user-friendly web-based To-Do List app that helps you 
 - JavaScript
 
 ## 🚀 How to Use
-Open the app in your browser: 👉 Live Demo
+Open the app in your browser: 👉 https://hafsa-developer.github.io/Task-Management-App/
 Start adding, checking, and managing your tasks!
 
-## 📷 Preview
-![To-Do List App Preview][Preview .png]
+
