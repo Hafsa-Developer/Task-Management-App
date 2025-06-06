@@ -34,6 +34,7 @@ A sleek, responsive task management application built with pure HTML, CSS, and J
 **Priority Indicators**: Color-coded based on importance
 **Progress Tracking**: Dynamic progress bar updates in real-time
 
+<<<<<<< HEAD
 ## 📋 Usage Guide
 **Add Task**:
 - Type in the input field
@@ -68,3 +69,10 @@ A sleek, responsive task management application built with pure HTML, CSS, and J
 - Persistent state management
 - Error handling
 - Code organization
+=======
+## 🚀 How to Use
+Open the app in your browser: 👉 https://hafsa-developer.github.io/Task-Management-App/
+Start adding, checking, and managing your tasks!
+
+
+>>>>>>> 4ea0e66973d90333f616160af6b9212693929284
