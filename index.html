@@ -3,25 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Management app</title>
+    <title>Advanced Task Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="hero-section">
+        <div class="hero-content">
+          <h1>Task Manager <i class="fas fa-check-circle"></i></h1>
+          <p>Organize your work and boost productivity</p>
+        </div>
+        <div class="stats-card">
+          <div class="stat-item">
+            <div class="stat-value" id="total-tasks">0</div>
+            <div class="stat-label">Total</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" id="completed-tasks">0</div>
+            <div class="stat-label">Done</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" id="pending-tasks">0</div>
+            <div class="stat-label">Pending</div>
+          </div>
+        </div>
+      </div>
     <div class="container">
         <div class="todo-app">
-            <h2>To-Do List <img src="icon.png"></h2>
-            <div class="row">
-                <input type="text" id="input-box" placeholder="Add your text">
-                <button onclick="addTask()">Add</button>
+            <div class="app-header">
+                <div class="header-content">
+                    <h1>Task Manager <i class="fas fa-tasks"></i></h1>
+                    <p>Organize your work and boost productivity</p>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <span id="task-count">0 tasks</span>
+                </div>
             </div>
-            <ul id="list-container">
-                  <!-- <li class="checked">Task 1</li>
-                  <li>Task 2</li>
-                  <li>Task 3</li> -->
-            </ul>
-
+            
+            <div class="input-section">
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Add a new task..." autocomplete="off">
+                    <select id="task-priority">
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    <button onclick="addTask()">
+                        <i class="fas fa-plus"></i> Add
+                    </button>
+                </div>
+            </div>
+            
+            <div class="filter-section">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="high">High Priority</button>
+                <button class="filter-btn" data-filter="medium">Medium Priority</button>
+                <button class="filter-btn" data-filter="low">Low Priority</button>
+            </div>
+            
+            <ul id="list-container"></ul>
+            
+            <div class="app-footer">
+                <p id="completed-count">0 completed</p>
+                <button onclick="clearCompleted()">Clear Completed</button>
+            </div>
         </div>
     </div>
+    <div class="app-footer">
+        <div class="footer-stats">
+          <span id="completed-count">0 completed</span>
+          <span class="divider">•</span>
+          <span id="remaining-count">0 remaining</span>
+        </div>
+        <button onclick="clearCompleted()" class="clear-btn">
+          <i class="fas fa-trash-alt"></i> Clear Completed
+        </button>
+      </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
