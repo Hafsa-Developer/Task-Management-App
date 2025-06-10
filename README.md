@@ -70,6 +70,3 @@ A sleek, responsive task management application built with pure HTML, CSS, and J
 - Error handling
 - Code organization
 =======
-## 🚀 How to Use
-Open the app in your browser: 👉 https://hafsa-developer.github.io/Task-Management-App/
-Start adding, checking, and managing your tasks!
